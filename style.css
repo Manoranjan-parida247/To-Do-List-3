@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  main {
+    background-color: #0093e9;
+    background: linear-gradient(135deg, #0093e9, #80d0c7);
+    color: FloralWhite;
+    min-height: 100vh;
+  }
+
+  header {
+    font-size: 32px;
+  }
+  
+  header,
+  form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .input{
+    background-color: white;
+  }
+  form input,
+  form button {
+    padding: 0.5rem;
+    font-size: 32px;
+    border: none;
+    background: white;
+  }
+  form button {
+    color: #ff6f47;
+    background: #f7fffe;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form button:hover {
+    background: #e28a6c;
+    color: white;
+  }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    /* border: 0 !important; */
+    border: 0;
+    background-image: none;
+  }
+
+.select,
+.input {
+  margin: 1rem;
+}
+
+/* Custom Select */
+.select {
+    position: relative;
+    overflow: hidden;
+    height: 48px;
+  }
+  select {
+    color: #ff6f47;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+  }
+
+  /* dropdown icon */
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    background: #ff6f47;
+    cursor: pointer;
+    pointer-events: none;
+  }
+
+  .filter-todo {
+    padding: 1rem;
+  }
+
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .todo-list {
+    min-width: 48%;
+    max-width: 80%;
+    list-style: none;
+  }
+  
+  .todo {
+    margin: 0.5rem;
+    background: white;
+    font-size: 1rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+  }
+  .filter-todo {
+    padding: 1rem;
+  }
+  .todo li {
+    flex: 1;
+  }
+  
+  .delete-btn,
+  .complete-btn {
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .complete-btn {
+    background: rgb(11, 212, 162);
+  }
+  .todo-item {
+    padding: 0rem 0.5rem;
+    flex: 1;
+  }
+  
+  .ri-check-fill,
+  .ri-delete-bin-fill{
+    pointer-events: none; 
+  }
+  
+  .completed .todo-item {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
